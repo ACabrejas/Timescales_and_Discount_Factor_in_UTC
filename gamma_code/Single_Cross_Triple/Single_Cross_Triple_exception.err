@@ -1,0 +1,133 @@
+Critical error in Vissim during a COM call.
+Simulation: Run 0 1884.10 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ffabeca3304
+Simulation: Run 0 1884.10 sec, The error occurred in line 638 of file c:\build\vissim\vissim110\vissim\vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+not available
+Simulation: Run 0 1884.10 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ffabeca32a6
+Simulation: Run 0 1884.10 sec, The error occurred in line 638 of file c:\build\vissim\vissim110\vissim\vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+not available
+Simulation: Run 0 1884.10 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 1712.80 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ffabeca3304
+Simulation: Run 0 1712.80 sec, The error occurred in line 638 of file c:\build\vissim\vissim110\vissim\vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+not available
+Simulation: Run 0 1712.80 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ffabeca32a6
+Simulation: Run 0 1712.80 sec, The error occurred in line 638 of file c:\build\vissim\vissim110\vissim\vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+not available
+Simulation: Run 0 1712.80 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 745.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 1943.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 2074.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 4041.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8fc8e49fc
+Simulation: Run 0 4041.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 4041.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 4041.00 sec, The error occurred in line 637 of file C:\Build\VISSIM\VISSIM200\VISSIM\Vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+0000007968AFD610
+
+Simulation: Run 0 4041.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8a48ecec6
+Simulation: Run 0 4041.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 3782.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8fc38bbc4
+Simulation: Run 0 3782.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 3782.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 3782.00 sec, The error occurred in line 637 of file C:\Build\VISSIM\VISSIM200\VISSIM\Vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+000000D450BFD930
+
+Simulation: Run 0 3782.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8a48d81d6
+Simulation: Run 0 3782.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 5384.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8fc38bbc4
+Simulation: Run 0 5384.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 5384.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 5384.00 sec, The error occurred in line 637 of file C:\Build\VISSIM\VISSIM200\VISSIM\Vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+0000005B7ABEDBB0
+
+Simulation: Run 0 5384.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8a48d2a56
+Simulation: Run 0 5384.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 4455.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8fc38bbc4
+Simulation: Run 0 4455.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 4455.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 4455.00 sec, The error occurred in line 637 of file C:\Build\VISSIM\VISSIM200\VISSIM\Vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+0000005A5D33D6C0
+
+Simulation: Run 0 4455.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8a48cf0f6
+Simulation: Run 0 4455.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 16685.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8fc9849fc
+Simulation: Run 0 16685.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 16685.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 16685.00 sec, The error occurred in line 637 of file C:\Build\VISSIM\VISSIM200\VISSIM\Vissim\netzwin.cpp in function long __cdecl main_eh(void *,struct XVT2DOTNET::s_event *).
+Information:
+not available
+Stack:
+000000B390D7DA30
+
+Simulation: Run 0 16685.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8a48e0126
+Simulation: Run 0 16685.00 sec, 
