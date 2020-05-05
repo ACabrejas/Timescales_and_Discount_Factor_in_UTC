@@ -73,3 +73,30 @@ class MasterMO_Agent():
                 actions[idx] = int(self.Agents[idx].choose_action(ns))
             t += 1
         self.env = None
+
+    def demo(self):
+
+        self.env = None
+        self.env = environment(self.model_name, self.vissim_working_directory, self.sim_length, self.Model_dictionnary,
+                               self.actions_set, \
+                               Random_Seed=self.Random_Seed, timesteps_per_second=self.timesteps_per_second,
+                               mode='demo', delete_results=True, verbose=True)
+
+        start_state = self.env.get_state()
+
+        actions = {}
+        for idx, s in start_state.items():
+            actions[idx] = self.Agents[idx].choose_action(s)
+        # Simulation Loop, Run until end of simulation
+
+        t = 0
+        while (self.sim_length - 3) > self.env.global_counter:
+            # self.Agents[idx].delay.append(self.env.SCUs[0].calculate_delay())
+            SARSDs = self.env.step_to_next_action(actions)
+            actions = dict()
+            for idx, sarsd in SARSDs.items():
+                s, a, r, ns, d = sarsd
+                # in order to find the next action you need to evaluate the "next_state" because it is the current state of the simulator
+                actions[idx] = int(self.Agents[idx].choose_action(ns))
+            t += 1
+        self.env = None

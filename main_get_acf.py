@@ -117,15 +117,15 @@ epsilon_sequence = choose_schedule(exploration_schedule, epsilon_start, epsilon_
 Triple_MO_Agent = MasterMO_Agent(model_name, vissim_working_directory, sim_length, \
                                  Single_Cross_Triple_dictionary8, actions_set, random_seed, \
                                  timesteps_per_second, Session_ID)
+Triple_MO_Agent.demo()
+#Triple_MO_Agent.get_data()
 
-Triple_MO_Agent.get_data()
+#folder = "C:\\Users\\acabrejasegea\Desktop\\15_Timescales_utc\\gamma_code\\Single_Cross_Triple\\"
+#q_filename = "as_Q400.pkl"
+#d_filename = "D1500.pkl"
 
-folder = "C:\\Users\\acabrejasegea\Desktop\\15_Timescales_utc\\gamma_code\\Single_Cross_Triple\\"
-q_filename = "as_Q400.pkl"
-d_filename = "D1500.pkl"
-
-with open(folder+q_filename, 'wb') as pickle_f:
-    pickle.dump(Triple_MO_Agent.Agents[0].queues_over_time,pickle_f)
+#with open(folder+q_filename, 'wb') as pickle_f:
+#    pickle.dump(Triple_MO_Agent.Agents[0].queues_over_time,pickle_f)
 
 #with open(folder+d_filename, 'wb') as pickle_f:
 #    pickle.dump(Triple_MO_Agent.Agents[0].delay, pickle_f)

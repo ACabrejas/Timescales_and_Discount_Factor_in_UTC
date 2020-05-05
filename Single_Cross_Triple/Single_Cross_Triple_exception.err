@@ -130,4 +130,16 @@ Stack:
 Simulation: Run 0 16685.00 sec, ExceptionCode = -1073741819
 ExceptionFlags = 0
 ExceptionAddress = 0x7ff8a48e0126
-Simulation: Run 0 16685.00 sec, 
+Simulation: Run 0 16685.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 2.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 709.00 sec, Critical error in Vissim during a COM call.
+Simulation: Run 0 1470.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff8a24dbbc4
+Simulation: Run 0 1470.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 1470.00 sec, ExceptionCode = -1073741819
+ExceptionFlags = 0
+ExceptionAddress = 0x7ff90c1b56b7
+Simulation: Run 0 1470.00 sec, 

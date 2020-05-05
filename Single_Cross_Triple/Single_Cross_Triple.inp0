@@ -1115,7 +1115,7 @@
 		<routGuid1 interval="999999" offset="0" strategy="NEWROUTETODESTINATIONPARKINGLOT"/>
 		<routGuid2 interval="999999" offset="0" strategy="NEWROUTETODESTINATIONPARKINGLOT"/>
 	</dynamicAssignment>
-	<evaluation autoCreateResultColumns="true" databaseConnection="" evalOutDir="#data#" keepPrevResults="KEEPCURRENT" listAutoExportType="FILE" nodesDelaySegmentStart="100" queueBeginSpeed="20" queueConsiderAdjacentLanes="false" queueEndSpeed="30" queueMaxClear="20" queueMaxLength="999">
+	<evaluation autoCreateResultColumns="true" databaseConnection="" evalOutDir="#data#" keepPrevResults="KEEPCURRENT" listAutoExportType="FILE" nodesDelaySegmentStart="100" queueBeginSpeed="20" queueConsiderAdjacentLanes="true" queueEndSpeed="30" queueMaxClear="20" queueMaxLength="999">
 		<areaMeasRawData fromTime="0" toTime="99999" writeFile="false"/>
 		<areaMeasResults collectData="false" fromTime="0" interval="99999" toTime="99999"/>
 		<areaResults collectData="false" fromTime="0" interval="99999" toTime="99999"/>
@@ -1151,7 +1151,7 @@
 		<ssam writeFile="false"/>
 		<sigChgs writeDatabase="false" writeFile="false"/>
 		<vehInpData writeFile="false"/>
-		<vehNetPerf collectData="false" fromTime="0" interval="99999" toTime="99999"/>
+		<vehNetPerf collectData="true" fromTime="0" interval="3" toTime="99999"/>
 		<vehRec filterType="ALL" fromTime="0" inclParkVehs="false" resolution="1" toTime="99999" writeDatabase="false" writeFile="false">
 			<attributes>
 				<attributeSelection attributeID="SIMSEC" decimals="2" format="SECONDS" showUnits="false"/>
@@ -1179,7 +1179,7 @@
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" level="1" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="1" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="-515.60773864634666" y="-7.0466168002336502" zOffset="0"/>
+					<linkPolyPoint x="-164.50788647267342" y="-5.4745279099037578" zOffset="0"/>
 					<linkPolyPoint x="-13.794522758048064" y="-5.4021185436744332" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1205,7 +1205,7 @@
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" level="1" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="3" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="288.00368689622326" y="-776.23985024130195" zOffset="0"/>
+					<linkPolyPoint x="287.06335052383349" y="-425.66709818385266" zOffset="0"/>
 					<linkPolyPoint x="286.97892494939271" y="-275.70507867396202" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1231,7 +1231,7 @@
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" level="1" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="5" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="1058.9757338747747" y="10.445041150056369" zOffset="0"/>
+					<linkPolyPoint x="708.53091873873893" y="7.8248929995065737" zOffset="0"/>
 					<linkPolyPoint x="558.23243609587598" y="7.8248929995065737" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1257,7 +1257,7 @@
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" level="1" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="7" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="274.48045664774787" y="778.02064304184682" zOffset="0"/>
+					<linkPolyPoint x="272.56140282654457" y="426.83379376161247" zOffset="0"/>
 					<linkPolyPoint x="273.56205140627515" y="276.14777008157807" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1413,10 +1413,10 @@
 			</lanes>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10000" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="1 1" pos="500.69719064681442"/>
+			<fromLinkEndPt lane="1 1" pos="149.59466127198309"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="-14.901766756421011" y="-8.9057659006016099" zOffset="0"/>
+					<linkPolyPoint x="-14.911560911288603" y="-8.9026556221583242" zOffset="0"/>
 					<linkPolyPoint x="-9.497446959231624" y="-9.3734553500564317" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1426,10 +1426,10 @@
 			<toLinkEndPt lane="9 1" pos="1.3314550737160218"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10001" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="1 2" pos="500.27357400950109"/>
+			<fromLinkEndPt lane="1 2" pos="149.17104463466976"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="-15.336850950466271" y="-5.4071729263474442" zOffset="0"/>
+					<linkPolyPoint x="-15.336859054327647" y="-5.4028595502512458" zOffset="0"/>
 					<linkPolyPoint x="-9.665136440866803" y="-5.5933319792434659" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1439,10 +1439,10 @@
 			<toLinkEndPt lane="10 1" pos="2.3375919635271174"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10002" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="1 3" pos="500.81477547842155"/>
+			<fromLinkEndPt lane="1 3" pos="149.71224610359019"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="-14.807122219051166" y="-1.9054181517986875" zOffset="0"/>
+					<linkPolyPoint x="-14.797339202485773" y="-1.9025999371039355" zOffset="0"/>
 					<linkPolyPoint x="-10.671273330677906" y="-1.9162374864345786" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1452,10 +1452,10 @@
 			<toLinkEndPt lane="11 1" pos="1.2496044170102323"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10003" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="5 1" pos="499.69982375904328"/>
+			<fromLinkEndPt lane="5 1" pos="149.24815368418842"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="559.26443711512229" y="11.330340876412587" zOffset="0"/>
+					<linkPolyPoint x="559.28276505455051" y="11.324892999506574" zOffset="0"/>
 					<linkPolyPoint x="551.29754716238199" y="11.317023831507317" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1465,10 +1465,10 @@
 			<toLinkEndPt lane="12 1" pos="1.131542567923886"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10004" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="5 2" pos="499.95739480283487"/>
+			<fromLinkEndPt lane="5 2" pos="149.50572472798001"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="559.02518315842667" y="7.8290410625141256" zOffset="0"/>
+					<linkPolyPoint x="559.02519401075892" y="7.8248929995065737" zOffset="0"/>
 					<linkPolyPoint x="550.95351626995284" y="7.4626244992082507" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1478,10 +1478,10 @@
 			<toLinkEndPt lane="13 1" pos="1.4755753709935269"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10005" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="5 3" pos="499.61396674444597"/>
+			<fromLinkEndPt lane="5 3" pos="149.16229666959111"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="559.38692007663099" y="4.3308859439842298" zOffset="0"/>
+					<linkPolyPoint x="559.36862206914782" y="4.3248929995065737" zOffset="0"/>
 					<linkPolyPoint x="551.21308933436626" y="3.5993516569819084" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1491,10 +1491,10 @@
 			<toLinkEndPt lane="14 1" pos="1.3877158478327662"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10006" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="3 1" pos="498.8038135154211"/>
+			<fromLinkEndPt lane="3 1" pos="148.23003620893107"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="290.48246360399247" y="-277.42991645533579" zOffset="0"/>
+					<linkPolyPoint x="290.4798994794204" y="-277.43511503670891" zOffset="0"/>
 					<linkPolyPoint x="291.06814900681672" y="-270.44004773107588" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1504,10 +1504,10 @@
 			<toLinkEndPt lane="17 1" pos="0.80198382953223435"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10007" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="3 2" pos="499.06731204724946"/>
+			<fromLinkEndPt lane="3 2" pos="148.49353474075946"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="286.98193147080923" y="-277.17358413036021" zOffset="0"/>
+					<linkPolyPoint x="286.97975168977217" y="-277.17358697531506" zOffset="0"/>
 					<linkPolyPoint x="287.29074038079136" y="-270.69651362398923" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1517,10 +1517,10 @@
 			<toLinkEndPt lane="16 1" pos="0.5455177611380011"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10008" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="3 3" pos="499.15895221157041"/>
+			<fromLinkEndPt lane="3 3" pos="148.58517490508044"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="283.48175118839873" y="-277.08910981271447" zOffset="0"/>
+					<linkPolyPoint x="283.47970065288274" y="-277.08391725419369" zOffset="0"/>
 					<linkPolyPoint x="283.68444481152636" y="-270.43924424132712" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1530,10 +1530,10 @@
 			<toLinkEndPt lane="15 1" pos="0.80278731983076568"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10009" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="7 1" pos="499.41513928429123"/>
+			<fromLinkEndPt lane="7 1" pos="148.23077211091612"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="270.0665563410904" y="278.61274479590304" zOffset="0"/>
+					<linkPolyPoint x="270.04580247994528" y="278.5830482137585" zOffset="0"/>
 					<linkPolyPoint x="269.50445433322551" y="268.49270627267896" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1543,10 +1543,10 @@
 			<toLinkEndPt lane="18 1" pos="1.9537365026878912"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10010" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="7 2" pos="500.12752228025289"/>
+			<fromLinkEndPt lane="7 2" pos="148.94315510687778"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="273.56524685350513" y="277.89395815768927" zOffset="0"/>
+					<linkPolyPoint x="273.55045587156013" y="277.89392258110689" zOffset="0"/>
 					<linkPolyPoint x="273.69711142181643" y="270.0017026837188" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -1556,10 +1556,10 @@
 			<toLinkEndPt lane="19 1" pos="0.94780844885405502"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="1" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10011" ovtOnlyPT="false" ovtSpeedFact="1.3" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="7 3" pos="500.18456145447385"/>
+			<fromLinkEndPt lane="7 3" pos="149.00019428109871"/>
 			<geometry>
 				<linkPolyPts>
-					<linkPolyPoint x="277.06513661422662" y="277.83051424393142" zOffset="0"/>
+					<linkPolyPoint x="277.05075747002309" y="277.8601263210536" zOffset="0"/>
 					<linkPolyPoint x="277.51258480444864" y="270.00217905808063" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
@@ -2510,18 +2510,18 @@
 		<occupancyDistribution mean="1" name="Single Occupancy" no="1" stdDev="0" type="NORMAL"/>
 	</occupancyDistributions>
 	<pavementMarkings>
-		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="5 3" length="5" name="" no="1" pos="454.5260220175187" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="1 3" length="5" name="" no="2" pos="456.08734851596671" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="3 3" length="5" name="" no="3" pos="455.401374521695" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="7 3" length="5" name="" no="4" pos="455.42139746811506" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="7 2" length="5" name="" no="5" pos="455.42139746811506" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="7 1" length="5" name="" no="6" pos="455.42139746811506" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="1 2" length="5" name="" no="7" pos="456.08734851596671" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="1 1" length="5" name="" no="8" pos="456.08734851596671" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="5 2" length="5" name="" no="9" pos="454.5260220175187" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="5 1" length="5" name="" no="10" pos="454.5260220175187" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="3 2" length="5" name="" no="11" pos="455.401374521695" rndDir="" type="ARROW"/>
-		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="3 1" length="5" name="" no="12" pos="455.401374521695" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="5 3" length="5" name="" no="1" pos="104.07435194266384" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="1 3" length="5" name="" no="2" pos="104.98481914113535" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="3 3" length="5" name="" no="3" pos="104.82759721520499" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="LEFT" lane="7 3" length="5" name="" no="4" pos="104.23703029473992" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="7 2" length="5" name="" no="5" pos="104.23703029473992" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="7 1" length="5" name="" no="6" pos="104.23703029473992" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="1 2" length="5" name="" no="7" pos="104.98481914113535" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="1 1" length="5" name="" no="8" pos="104.98481914113535" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="5 2" length="5" name="" no="9" pos="104.07435194266384" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="5 1" length="5" name="" no="10" pos="104.07435194266384" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="STRAIGHT" lane="3 2" length="5" name="" no="11" pos="104.82759721520499" rndDir="" type="ARROW"/>
+		<pavementMarking anmFlag="false" arrowDir="RIGHT,STRAIGHT" lane="3 1" length="5" name="" no="12" pos="104.82759721520499" rndDir="" type="ARROW"/>
 	</pavementMarkings>
 	<pedestrianClasses>
 		<pedestrianClass color="ff000000" name="Man, Woman" no="10" usePedTypeColor="true">
@@ -2683,7 +2683,7 @@
 		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="19 1" localNo="0" name="" no="11" orSG="1 11" pos="249.36770742605739" sg="1 11" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
 		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="18 1" localNo="0" name="" no="12" pos="248.72688609882724" sg="1 12" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
 	</signalHeads>
-	<simulation comment="" numCores="1" numRuns="1" randSeed="42" randSeedIncr="1" retroSync="false" simMode="MICRO" simPeriod="18000" simRes="10" simSpeed="3" startTm="0" useAllCores="true" useMaxSimSpeed="true" volumeIncrDynAssign="0"/>
+	<simulation comment="" numCores="1" numRuns="1" randSeed="834" randSeedIncr="1" retroSync="false" simMode="MICRO" simPeriod="3601" simRes="1" simSpeed="3" startTm="0" useAllCores="true" useMaxSimSpeed="true" volumeIncrDynAssign="0"/>
 	<timeDistributions>
 		<timeDistribution mean="0.5" name="0.5 s" no="1" stdDev="0" type="NORMAL"/>
 		<timeDistribution mean="0.9" name="0.9 s" no="2" stdDev="0" type="NORMAL"/>
@@ -2698,6 +2698,12 @@
 		<timeIntervalSet no="VEHICLEINPUT">
 			<timeInts>
 				<timeInterval start="0"/>
+				<timeInterval start="600"/>
+				<timeInterval start="1200"/>
+				<timeInterval start="1800"/>
+				<timeInterval start="2400"/>
+				<timeInterval start="3000"/>
+				<timeInterval start="3600"/>
 			</timeInts>
 		</timeIntervalSet>
 		<timeIntervalSet no="VEHICLEROUTESTATIC">
@@ -2791,27 +2797,51 @@
 	<vehicleInputs>
 		<vehicleInput anmFlag="false" link="1" name="WE" no="1">
 			<timeIntVehVols>
-				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="2133"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 600000" vehComp="1" volType="STOCHASTIC" volume="666"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1200000" vehComp="1" volType="STOCHASTIC" volume="700"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="1500"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 2400000" vehComp="1" volType="STOCHASTIC" volume="1333"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3000000" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="3" name="SN" no="2">
 			<timeIntVehVols>
-				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="2133"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 600000" vehComp="1" volType="STOCHASTIC" volume="1333"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1200000" vehComp="1" volType="STOCHASTIC" volume="1500"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="1500"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 2400000" vehComp="1" volType="STOCHASTIC" volume="1333"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3000000" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="5" name="EW" no="3">
 			<timeIntVehVols>
-				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="1066"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 600000" vehComp="1" volType="STOCHASTIC" volume="666"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1200000" vehComp="1" volType="STOCHASTIC" volume="700"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="700"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 2400000" vehComp="1" volType="STOCHASTIC" volume="666"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3000000" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 		<vehicleInput anmFlag="false" link="7" name="NS" no="4">
 			<timeIntVehVols>
-				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="1066"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="1" volType="STOCHASTIC" volume="800"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 600000" vehComp="1" volType="STOCHASTIC" volume="1333"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1200000" vehComp="1" volType="STOCHASTIC" volume="1500"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 1800000" vehComp="1" volType="STOCHASTIC" volume="700"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 2400000" vehComp="1" volType="STOCHASTIC" volume="666"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3000000" vehComp="1" volType="STOCHASTIC" volume="400"/>
+				<timeIntervalVehVolume cont="false" timeInt="1 3600000" vehComp="1" volType="STOCHASTIC" volume="0"/>
 			</timeIntVehVols>
 		</vehicleInput>
 	</vehicleInputs>
 	<vehicleRoutingDecisionsStatic>
-		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="1" name="" no="1" pos="0.84163311470171365" routeChoiceMeth="STATIC">
+		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="1" name="" no="1" pos="1.1484638779277181" routeChoiceMeth="STATIC">
 			<vehRoutSta>
 				<vehicleRouteStatic destLink="4" destPos="402.48847605568255" formula="" name="" no="1" relFlow="">
 					<linkSeq>
@@ -2842,7 +2872,7 @@
 				</vehicleRouteStatic>
 			</vehRoutSta>
 		</vehicleRoutingDecisionStatic>
-		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="3" name="" no="2" pos="2.3366629108324055" routeChoiceMeth="STATIC">
+		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="3" name="" no="2" pos="0.60562121934939606" routeChoiceMeth="STATIC">
 			<vehRoutSta>
 				<vehicleRouteStatic destLink="6" destPos="400.66070428699345" formula="" name="" no="1" relFlow="">
 					<linkSeq>
@@ -2873,7 +2903,7 @@
 				</vehicleRouteStatic>
 			</vehRoutSta>
 		</vehicleRoutingDecisionStatic>
-		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="5" name="" no="3" pos="0.83284313767803098" routeChoiceMeth="STATIC">
+		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="5" name="" no="3" pos="2.6308598377969474" routeChoiceMeth="STATIC">
 			<vehRoutSta>
 				<vehicleRouteStatic destLink="8" destPos="371.55192764131118" formula="" name="" no="1" relFlow="">
 					<linkSeq>
@@ -2904,7 +2934,7 @@
 				</vehicleRouteStatic>
 			</vehRoutSta>
 		</vehicleRoutingDecisionStatic>
-		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="7" name="" no="4" pos="1.5119087927444785" routeChoiceMeth="STATIC">
+		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="7" name="" no="4" pos="3.8201899431749995" routeChoiceMeth="STATIC">
 			<vehRoutSta>
 				<vehicleRouteStatic destLink="2" destPos="419.67971431414247" formula="" name="" no="1" relFlow="">
 					<linkSeq>
@@ -2939,51 +2969,51 @@
 	<vehicleTravelTimeMeasurements>
 		<vehicleTravelTimeMeasurement name="" no="1">
 			<end link="4" pos="403.31718746413895"/>
-			<start link="1" pos="352.87902308196647"/>
+			<start link="1" pos="1.776493707135093"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="2">
 			<end link="6" pos="407.99186286473611"/>
-			<start link="1" pos="353.50566990846511"/>
+			<start link="1" pos="2.1966237239812316"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="3">
 			<end link="8" pos="390.79207682885294"/>
-			<start link="1" pos="352.87902308196647"/>
+			<start link="1" pos="1.776493707135093"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="4">
 			<end link="6" pos="407.73299351227678"/>
-			<start link="3" pos="353.2746316600917"/>
+			<start link="3" pos="2.7008543536017151"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="5">
 			<end link="8" pos="392.01840105680986"/>
-			<start link="3" pos="353.79880871615865"/>
+			<start link="3" pos="3.2250314096686337"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="6">
 			<end link="2" pos="422.1950565386702"/>
-			<start link="3" pos="353.53620390661973"/>
+			<start link="3" pos="2.962426600129743"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="7">
 			<end link="4" pos="403.84121709424892"/>
-			<start link="5" pos="352.5585002825419"/>
+			<start link="5" pos="2.1068302076870395"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="8">
 			<end link="2" pos="422.61428024275813"/>
-			<start link="5" pos="352.82051509759685"/>
+			<start link="5" pos="2.3688450227419935"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="9">
 			<end link="8" pos="391.20116321513308"/>
-			<start link="5" pos="353.08252991265181"/>
+			<start link="5" pos="2.6308598377969474"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="10">
 			<end link="2" pos="422.1950565386702"/>
-			<start link="7" pos="355.85323993285112"/>
+			<start link="7" pos="4.668872759476014"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="11">
 			<end link="4" pos="403.57920227919396"/>
-			<start link="7" pos="355.86955151770235"/>
+			<start link="7" pos="4.6851843443272276"/>
 		</vehicleTravelTimeMeasurement>
 		<vehicleTravelTimeMeasurement name="" no="12">
 			<end link="6" pos="407.73194519950619"/>
-			<start link="7" pos="354.21296484722825"/>
+			<start link="7" pos="3.0285976738531484"/>
 		</vehicleTravelTimeMeasurement>
 	</vehicleTravelTimeMeasurements>
 	<vehicleTypes>
