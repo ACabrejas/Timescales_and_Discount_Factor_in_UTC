@@ -76,8 +76,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MOAgents" />
       <item itemvalue="Python.main_get_acf" />
+      <item itemvalue="Python.MOAgents" />
     </list>
     <recent_temporary>
       <list>
