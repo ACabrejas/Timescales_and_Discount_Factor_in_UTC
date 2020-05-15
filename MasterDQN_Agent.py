@@ -127,7 +127,9 @@ class MasterDQN_Agent():
 					self.advance_schedule()
 
 					if self.number_of_episode != number_of_episode + 1:
-						print('Episode {}: Starting computation.'.format(self.number_of_episode+1)) 
+						print('Episode {}: Starting computation.'.format(self.number_of_episode+1))
+
+
 
 					break
 

@@ -95,7 +95,7 @@ class DQNAgent(RLAgent):
             # Else use the deque structure to only store experiences which will be sampled uniformly
             self.memory = deque(maxlen=memory_size)
    
-        self.memory2 = deque(maxlen=200000)
+        self.memory2 = deque(maxlen=1000000)
 
     def _build_model(self):
         '''

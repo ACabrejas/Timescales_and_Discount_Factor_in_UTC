@@ -107,7 +107,7 @@ def balance_dictionary(agent_type):
 			 'red_time' : 0,
 			 'state_size' : [14],
 			 'state_type' : 'Queues',
-			 'reward_type' : 'Queues',
+			 'reward_type' : 'Avg_speed',
              'queues_counter_ID' : [48, 49, 50, 51, 52, 53, 54, 41, 42, 43, 44, 45, 46 ,47],
 			 'agent_type' : agent_type
 			},

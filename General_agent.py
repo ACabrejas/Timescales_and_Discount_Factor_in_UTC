@@ -93,7 +93,6 @@ class RLAgent():
 				Optimizer_Filename = os.path.join(vissim_working_directory, model_name, "Agents_Results", agent_type, Session_ID,'Episode'+ str(episode) +'Agent'+ str(self.ID)+'_Optimizer'+'.h5')
 
 			# this is to build the network (to be corrected) 
-			self.test()
 			self.model.load_weights(Weights_Filename)
 
 			self.model._make_train_function()
