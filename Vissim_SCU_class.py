@@ -222,36 +222,39 @@ class Signal_Control_Unit():
 		if self.reward_type == 'Queues':
 			reward = -np.sum(self.queue_state)
 
-		elif self.reward_type == 'Queues_with_incentive':
-			queues_incentive = [-10. if queue == 0. else queue for queue in self.queue_state]
-			reward = -np.sum(queues_incentive)
-
-		elif self.reward_type == "Queues_squared":
-			reward = -((np.sum(self.queue_state)/(7*len(self.queue_state)))**2)
-
-		elif self.reward_type == "Avg_speed":
-			self.total_tt = 0 if self.VehNetPerformance.AttValue('TravTmTot(Current, Last, All)') is None else self.VehNetPerformance.AttValue('TravTmTot(Current, Last, All)')
-			self.total_d =  0 if self.VehNetPerformance.AttValue('DistTot(Current, Last, All)') is None else self.VehNetPerformance.AttValue('DistTot(Current, Last, All)')
-
-			bottom = (self.total_tt - self.total_tt_p)
-			top = (self.total_d - self.total_d_p)*1000
-			if bottom == 0:
-				reward = 0
-			else:
-				reward = top/bottom
-
-			self.total_tt_p = self.total_tt
-			self.total_d_p = self.total_d
-
-		elif self.reward_type == "Delay":
-			reward = - self.calculate_delay()
-
-		elif self.reward_type == "Delay_9s":
-			current_del = self.calculate_delay()
-			reward = - current_del - self.delay_p - self.delay_pp #- self.delay_ppp
-			#self.delay_ppp = self.delay_pp
-			self.delay_pp = self.delay_p
-			self.delay_p = current_del
+#		elif self.reward_type == "Queues_norm":
+#			reward = -np.minimum(1, np.sum(self.queue_state)/(12*150))
+#
+#		elif self.reward_type == 'Queues_with_incentive':
+#			queues_incentive = [-10. if queue == 0. else queue for queue in self.queue_state]
+#			reward = -np.sum(queues_incentive)
+#
+#		elif self.reward_type == "Queues_squared":
+#			reward = -((np.sum(self.queue_state)/(1*len(self.queue_state)))**2)
+#
+#		elif self.reward_type == "Avg_speed":
+#			self.total_tt = 0 if self.VehNetPerformance.AttValue('TravTmTot(Current, Last, All)') is None else self.VehNetPerformance.AttValue('TravTmTot(Current, Last, All)')
+#			self.total_d =  0 if self.VehNetPerformance.AttValue('DistTot(Current, Last, All)') is None else self.VehNetPerformance.AttValue('DistTot(Current, Last, All)')
+#
+#			bottom = (self.total_tt - self.total_tt_p)
+#			top = (self.total_d - self.total_d_p)*1000
+#			if bottom == 0:
+#				reward = 0
+#			else:
+#				reward = top/bottom
+#
+#			self.total_tt_p = self.total_tt
+#			self.total_d_p = self.total_d
+#
+#		elif self.reward_type == "Delay":
+#			reward = - self.calculate_delay()
+#
+#		elif self.reward_type == "Delay_9s":
+#			current_del = self.calculate_delay()
+#			reward = - current_del - self.delay_p - self.delay_pp #- self.delay_ppp
+#			#self.delay_ppp = self.delay_pp
+#			self.delay_pp = self.delay_p
+#			self.delay_p = current_del
 		return(reward)
 
 	def calculate_delay(self):

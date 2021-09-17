@@ -41,10 +41,17 @@ class environment():
 		self.delete_results = delete_results
 		self.verbose = verbose
 
+		# Demand List:
+		self.demand_list = [[1, 1, 0.75, 0.75, 1.25, 1],
+							[1, 1, 1.25, 0.75, 1.25, 1],
+							[1, 1, 0.75, 1.25, 0.75, 1],
+							[1, 1, 1.25, 1.25, 0.75, 1]]
+
 		# Dispatach the COM server
 		if not vissim :
-			self.Vissim, _ = COMServerDispatch(model_name, vissim_working_directory, self.sim_length,\
-											self.timesteps_per_second, delete_results = self.delete_results, verbose = self.verbose)
+			self.Vissim, _ = COMServerDispatch(model_name, vissim_working_directory, self.sim_length,
+											   self.timesteps_per_second, delete_results = self.delete_results,
+											   verbose = self.verbose)
 		else :
 			self.Vissim = vissim
 
@@ -103,7 +110,6 @@ class environment():
 						 Signal_Groups = None\
 						)
 
-	# retrun the state of the environnement as a dictionary
 	def get_state(self):
 		"""
 		Get the state of the environment
@@ -334,7 +340,7 @@ class environment():
 		# Increase Random Seed
 		new_random_seed = self.Vissim.Simulation.AttValue('RandSeed')+1
 		self.Vissim.Simulation.SetAttValue('RandSeed', new_random_seed)
-		print("Random Seed Set to {}".format(new_random_seed))
+		#print("Random Seed Set to {}".format(new_random_seed))
 
 		# Set simulator configuration
 		self.select_mode()
@@ -350,7 +356,7 @@ class environment():
 
 
 	# This function has to be changed into something more flexible
-	def change_demand(self, demand_list):
+	def change_demand(self, volume):
 		"""
 		Change the demand and the number of vehicle inputs in the model
 		-input Level is a factor or a string that indicate the a level of demand.
@@ -358,12 +364,12 @@ class environment():
 
 		"""
 		for idx, V_input in enumerate(self.Vehicle_Inputs):
-			V_input.SetAttValue('Volume(1)', demand_list[idx])
-
-		
-
-		pass 
-
+			V_input.SetAttValue('Volume(1)', self.demand_list[idx][0]*volume)
+			V_input.SetAttValue('Volume(2)', self.demand_list[idx][1]*volume)
+			V_input.SetAttValue('Volume(3)', self.demand_list[idx][2]*volume)
+			V_input.SetAttValue('Volume(4)', self.demand_list[idx][3]*volume)
+			V_input.SetAttValue('Volume(5)', self.demand_list[idx][4]*volume)
+			V_input.SetAttValue('Volume(6)', self.demand_list[idx][5]*volume)
 
 	def select_mode(self):
 		"""
@@ -546,7 +552,9 @@ def COMServerDispatch(model_name, vissim_working_directory, sim_length, timestep
 				# Check Chache
 				print ('Generating Cache...')
 			
-			# Vissim = win32com.client.gencache.EnsureDispatch("Vissim.Vissim") 
+			# Vissim = win32com.client.gencache.EnsureDispatch("Vissim.Vissim")
+
+
 			Vissim = win32com.client.dynamic.Dispatch("Vissim.Vissim") 
 		
 			if verbose:
